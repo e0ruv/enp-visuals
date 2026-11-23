@@ -1,0 +1,103 @@
+{
+  "studio": "enp visuals",
+  "updated": "2026-11-22",
+  "works": [
+    {
+      "id": "w1",
+      "type": "video",
+      "title": "Nocturne",
+      "year": "2025",
+      "ratio": "feature",
+      "duration": "01:12",
+      "role": "Direction · Cinematography · Edit",
+      "client": "Independent",
+      "desc": "A fashion short shot after midnight — sodium light, wet asphalt, and a frame held longer than it should be. Graded to keep the dark breathing.",
+      "media": "media/nocturne.webm",
+      "poster": "media/poster-nocturne.svg",
+      "meta1": "ARRI Alexa Mini",
+      "meta2": "40mm · T2.1"
+    },
+    {
+      "id": "w2",
+      "type": "video",
+      "title": "Grain & Light",
+      "year": "2024",
+      "ratio": "portrait",
+      "duration": "00:48",
+      "role": "Direction · Camera · Edit",
+      "client": "Linen campaign",
+      "desc": "A textile campaign built around one window and one afternoon. The cloth does the moving; the camera stays still.",
+      "media": "media/grain.webm",
+      "poster": "media/poster-grain.svg",
+      "meta1": "Sony FX3",
+      "meta2": "85mm · T1.8"
+    },
+    {
+      "id": "w3",
+      "type": "video",
+      "title": "Seoul, 4AM",
+      "year": "2026",
+      "ratio": "portrait",
+      "duration": "02:04",
+      "role": "Camera · Edit · Colour",
+      "client": "Personal",
+      "desc": "A vertical diary of the hours when the city is only signage and rain. Shot on a walk home, assembled from what the night kept.",
+      "media": "media/seoul.webm",
+      "poster": "media/poster-seoul.svg",
+      "meta1": "iPhone 15 Pro",
+      "meta2": "24mm · handheld"
+    },
+    {
+      "id": "w4",
+      "type": "photo",
+      "title": "Static Bloom",
+      "year": "2025",
+      "ratio": "portrait",
+      "role": "Photography · Styling",
+      "client": "Study",
+      "desc": "An anemone, one lamp, and a shutter left open a beat too long. Part of an ongoing study of red.",
+      "poster": "media/poster-bloom.svg",
+      "meta1": "Hasselblad 500CM",
+      "meta2": "120mm · Portra 400"
+    },
+    {
+      "id": "w5",
+      "type": "photo",
+      "title": "Concrete Prayer",
+      "year": "2024",
+      "ratio": "landscape",
+      "role": "Photography",
+      "client": "Architecture study",
+      "desc": "A chapel corridor at 4pm. The only light in the room is a slot the architect cut on purpose.",
+      "poster": "media/poster-concrete.svg",
+      "meta1": "Mamiya 7II",
+      "meta2": "80mm · Ektar 100"
+    },
+    {
+      "id": "w6",
+      "type": "photo",
+      "title": "Blue Hour, Apt. 402",
+      "year": "2025",
+      "ratio": "square",
+      "role": "Photography · Direction",
+      "client": "Editorial",
+      "desc": "Dusk arriving in a rented apartment, ten minutes before the lamps were switched on.",
+      "poster": "media/poster-bluehour.svg",
+      "meta1": "Contax T2",
+      "meta2": "38mm · Portra 800"
+    },
+    {
+      "id": "w7",
+      "type": "photo",
+      "title": "Salt & Chrome",
+      "year": "2026",
+      "ratio": "portrait",
+      "role": "Photography · Set",
+      "client": "Product",
+      "desc": "Steel, salt and a single strip of light — a product study about reflection rather than the object.",
+      "poster": "media/poster-chrome.svg",
+      "meta1": "Sony A7R V",
+      "meta2": "90mm Macro · T8"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1600" width="900" height="1600" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="26"/>
+  </filter>
+  <filter id="soft2" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+  <filter id="soft4" x="-25%" y="-25%" width="150%" height="150%">
+    <feGaussianBlur stdDeviation="48"/>
+  </filter>
+  <filter id="mirror" x="-10%" y="-10%" width="120%" height="160%">
+    <feGaussianBlur stdDeviation="6"/>
+  </filter>
+</defs>
+
+<defs>
+  <linearGradient id="night" x1="0" y1="0" x2="0.2" y2="1">
+    <stop offset="0%" stop-color="#04090E"/>
+    <stop offset="45%" stop-color="#061018"/>
+    <stop offset="72%" stop-color="#081A22"/>
+    <stop offset="100%" stop-color="#03070A"/>
+  </linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0B1C24"/>
+    <stop offset="55%" stop-color="#071219"/>
+    <stop offset="100%" stop-color="#0A1A22"/>
+  </linearGradient>
+  <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#020507" stop-opacity=".9"/>
+    <stop offset="16%" stop-color="#020507" stop-opacity="0"/>
+    <stop offset="84%" stop-color="#020507" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#020507" stop-opacity=".92"/>
+  </linearGradient>
+</defs>
+<rect width="900" height="1600" fill="url(#night)"/>
+<!-- haze behind the sign -->
+<ellipse cx="414" cy="800" rx="450" ry="480" fill="#1E4E5A" opacity=".22" filter="url(#soft4)"/>
+<g transform="rotate(-1.6 450 800)">
+  <rect x="76" y="344" width="693" height="920" fill="url(#panel)"/>
+  <rect x="76" y="344" width="693" height="920" fill="none" stroke="#3C5A64" stroke-width="2" opacity=".55"/>
+  <rect x="76" y="344" width="693" height="2" fill="#9FBAC2" opacity=".35"/>
+  <!-- neon tubes -->
+  <g>
+    <rect x="122" y="480" width="522" height="21" fill="#FF4A6B"/>
+    <rect x="122" y="480" width="522" height="6" fill="#FFE3E8" opacity=".85"/>
+    <rect x="112" y="467" width="540" height="46" fill="#FF4A6B" opacity=".22" filter="url(#soft2)"/>
+
+    <rect x="122" y="672" width="360" height="18" fill="#3FD3E6"/>
+    <rect x="122" y="672" width="360" height="5" fill="#E4FCFE" opacity=".85"/>
+    <rect x="115" y="662" width="378" height="37" fill="#3FD3E6" opacity=".20" filter="url(#soft2)"/>
+
+    <rect x="122" y="864" width="468" height="16" fill="#F2B36A"/>
+    <rect x="122" y="864" width="468" height="4" fill="#FFF2D9" opacity=".85"/>
+    <rect x="115" y="854" width="486" height="34" fill="#F2B36A" opacity=".18" filter="url(#soft2)"/>
+
+    <rect x="122" y="1048" width="234" height="13" fill="#E9E4DA" opacity=".62"/>
+    <rect x="122" y="1048" width="234" height="4" fill="#FFFFFF" opacity=".8"/>
+  </g>
+  <!-- a small hanging bracket and screws -->
+  <g fill="#4E6A73" opacity=".8">
+    <circle cx="104" cy="392" r="4"/>
+    <circle cx="742" cy="392" r="4"/>
+    <circle cx="104" cy="1216" r="4"/>
+    <circle cx="742" cy="1216" r="4"/>
+  </g>
+</g>
+<!-- rain on the glass, in front of everything -->
+<g stroke="#BFE3EA" stroke-width="1.2" opacity=".20">
+  <line x1="180" y1="96" x2="153" y2="1536"/>
+  <line x1="342" y1="32" x2="315" y2="1568"/>
+  <line x1="513" y1="128" x2="491" y2="1504"/>
+  <line x1="666" y1="32" x2="644" y2="1552"/>
+  <line x1="810" y1="160" x2="792" y2="1472"/>
+</g>
+<g fill="#E8F7FA" opacity=".38">
+  <circle cx="270" cy="296" r="2.4"/>
+  <circle cx="486" cy="576" r="1.8"/>
+  <circle cx="198" cy="752" r="2.6"/>
+  <circle cx="612" cy="800" r="1.7"/>
+  <circle cx="396" cy="1152" r="2.1"/>
+  <circle cx="720" cy="1280" r="1.9"/>
+  <circle cx="144" cy="1056" r="1.5"/>
+</g>
+<rect width="900" height="1600" fill="url(#fade)"/>
+
+<rect width="900" height="1600" filter="url(#grain)" opacity="0.16" style="mix-blend-mode:overlay"/>
+</svg>
