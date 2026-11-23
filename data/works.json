@@ -49,7 +49,7 @@
     },
     {
       "id": "w4",
-      "type": "photo",
+      "type": "design",
       "title": "Static Bloom",
       "year": "2025",
       "ratio": "portrait",
@@ -62,7 +62,7 @@
     },
     {
       "id": "w5",
-      "type": "photo",
+      "type": "design",
       "title": "Concrete Prayer",
       "year": "2024",
       "ratio": "landscape",
@@ -75,7 +75,7 @@
     },
     {
       "id": "w6",
-      "type": "photo",
+      "type": "design",
       "title": "Blue Hour, Apt. 402",
       "year": "2025",
       "ratio": "square",
@@ -88,7 +88,7 @@
     },
     {
       "id": "w7",
-      "type": "photo",
+      "type": "design",
       "title": "Salt & Chrome",
       "year": "2026",
       "ratio": "portrait",
