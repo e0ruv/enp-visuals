@@ -625,7 +625,7 @@ h1.title .w2{
         <p class="eyebrow" data-i18n="work.eyebrow">Portfolio</p>
         <h2 data-i18n="work.title">Selected work</h2>
       </div>
-      <div class="meta" id="workMeta">07 works<br>Motion &amp; stills</div>
+      <div class="meta" id="workMeta">07 works<br>Motion &amp; design</div>
     </div>
 
     <div class="filters" role="tablist" aria-label="Filter work">
@@ -879,7 +879,7 @@ const I18N = {
   ko: {
     'hero.sub':'영상과 사진을 만드는 작은 스튜디오. 느린 빛, 느린 프레임, 그 사이의 순간들. 기획부터 촬영·편집·색보정까지 직접 합니다.',
     'hero.avail':'촬영 문의 가능', 'hero.scroll':'작업 보기',
-    'work.eyebrow':'포트폴리오', 'work.title':'선택 작업',
+    'work.eyebrow':'포트폴리오', 'work.title':'선택 작업', 'work.meta':'작업<br>영상 · 디자인',
     'filter.all':'전체','filter.video':'영상','filter.design':'디자인',
     'group.motion':'영상','group.designs':'디자인',
     'about.eyebrow':'소개','about.title1':'빛과 그레인,','about.title2':'그리고 시간.',
@@ -924,7 +924,7 @@ const I18N = {
   en: {
     'hero.sub':'A small studio for film and stills — quiet light, slow frames, and the moments between them. Directed, shot and finished in-house.',
     'hero.avail':'Available for commissions','hero.scroll':'Selected work',
-    'work.eyebrow':'Portfolio','work.title':'Selected work',
+    'work.eyebrow':'Portfolio','work.title':'Selected work','work.meta':'works<br>Motion &amp; design',
     'filter.all':'All','filter.video':'Video','filter.design':'Design',
     'group.motion':'Motion','group.designs':'Design',
     'about.eyebrow':'About','about.title1':'Light, grain','about.title2':'and time.',
@@ -1068,7 +1068,7 @@ function renderAll(){
   if (pg) pg.innerHTML = designs.map((w,i)=>photoCard(w,i,designs.length)).join('');
   $('#motionCount').textContent = `${pad2(videos.length)} ${t('count.films')}`;
   $('#photoCount').textContent = `${pad2(designs.length)} ${t('count.designs')}`;
-  $('#workMeta').innerHTML = `${pad2(works.length)} works<br>Motion &amp; stills`;
+  $('#workMeta').innerHTML = `${pad2(works.length)} ${t('work.meta')}`;
   const setCount = (k,v) => $$(`[data-count="${k}"]`).forEach(el => el.textContent = pad2(v));
   setCount('all', works.length); setCount('video', videos.length); setCount('design', designs.length);
   observeReveals();
